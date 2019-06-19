@@ -17,8 +17,14 @@ class PlaylistController {
     static let shared = PlaylistController()
     
     //Source of Truth
-    var playlists: [Playlist] = []
     
+    var playlists: [Playlist] {
+        //creating a fetch request of type playlist that specifically references the playlist model obeject
+        //telling the managed object
+    let request: NSFetchRequest<Playlist> = Playlist.fetchRequest()
+        //use that fetch request to ask the managedObjectContext for all Playlist Model Objects that exist inside of the MOC
+    return (try? CoreDataStack.managedObjectContext.fetch(request)) ?? []
+    }
     //Crud
     
     //Create

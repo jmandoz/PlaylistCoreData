@@ -26,6 +26,12 @@ class SongController {
     }
     
     //delete
-    
+    func delete(song: Song) {
+        if let moc = song.managedObjectContext {
+            moc.delete(song)
+            PlaylistController.shared.saveToPersistentStore()
+
+        }
+    }
     
 }
