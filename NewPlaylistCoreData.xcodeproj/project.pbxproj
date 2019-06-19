@@ -14,6 +14,9 @@
 		A4C9CA7322BA9838006E785F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C9CA7122BA9838006E785F /* LaunchScreen.storyboard */; };
 		A4C9CA7E22BA9D5C006E785F /* PlaylistListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9CA7D22BA9D5C006E785F /* PlaylistListTableViewController.swift */; };
 		A4C9CA8022BA9E77006E785F /* SongListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9CA7F22BA9E77006E785F /* SongListTableViewController.swift */; };
+		A4C9CA8222BAA355006E785F /* Playlist+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9CA8122BAA355006E785F /* Playlist+Convenience.swift */; };
+		A4C9CA8422BAA463006E785F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9CA8322BAA463006E785F /* CoreDataStack.swift */; };
+		A4C9CA8622BAA721006E785F /* Song+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9CA8522BAA721006E785F /* Song+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		A4C9CA7422BA9838006E785F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4C9CA7D22BA9D5C006E785F /* PlaylistListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistListTableViewController.swift; sourceTree = "<group>"; };
 		A4C9CA7F22BA9E77006E785F /* SongListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListTableViewController.swift; sourceTree = "<group>"; };
+		A4C9CA8122BAA355006E785F /* Playlist+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Playlist+Convenience.swift"; sourceTree = "<group>"; };
+		A4C9CA8322BAA463006E785F /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		A4C9CA8522BAA721006E785F /* Song+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Song+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		A4C9CA6422BA9837006E785F /* NewPlaylistCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				A4C9CA8722BAA861006E785F /* ViewControllers */,
 				A4C9CA7B22BA98B9006E785F /* Resources */,
 				A4C9CA7C22BA98C4006E785F /* Views */,
 				A4C9CA7A22BA98AE006E785F /* Model */,
@@ -69,8 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				A4C9CA6C22BA9837006E785F /* NewPlaylistCoreData.xcdatamodeld */,
-				A4C9CA7D22BA9D5C006E785F /* PlaylistListTableViewController.swift */,
-				A4C9CA7F22BA9E77006E785F /* SongListTableViewController.swift */,
+				A4C9CA8122BAA355006E785F /* Playlist+Convenience.swift */,
+				A4C9CA8522BAA721006E785F /* Song+Convenience.swift */,
+				A4C9CA8322BAA463006E785F /* CoreDataStack.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +100,15 @@
 				A4C9CA6922BA9837006E785F /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A4C9CA8722BAA861006E785F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4C9CA7D22BA9D5C006E785F /* PlaylistListTableViewController.swift */,
+				A4C9CA7F22BA9E77006E785F /* SongListTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4C9CA7E22BA9D5C006E785F /* PlaylistListTableViewController.swift in Sources */,
+				A4C9CA8222BAA355006E785F /* Playlist+Convenience.swift in Sources */,
 				A4C9CA6E22BA9837006E785F /* NewPlaylistCoreData.xcdatamodeld in Sources */,
+				A4C9CA8422BAA463006E785F /* CoreDataStack.swift in Sources */,
 				A4C9CA8022BA9E77006E785F /* SongListTableViewController.swift in Sources */,
 				A4C9CA6622BA9837006E785F /* AppDelegate.swift in Sources */,
+				A4C9CA8622BAA721006E785F /* Song+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
